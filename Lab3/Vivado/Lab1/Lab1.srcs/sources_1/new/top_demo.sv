@@ -64,6 +64,13 @@ module top_demo
 
   fsm state(smol_clk, btn[1], sw[1], sw[0], y, ledOut);
 
+  assign led[0] = ledOut[0];
+  assign led[1] = ledOut[1];
+  assign led[2] = ledOut[2];
+  assign led[5] = ledOut[3];
+  assign led[6] = ledOut[4];
+  assign led[7] = ledOut[5];
+
 // Register logic storing clock counts
   always@(posedge sysclk_125mhz)
   begin
