@@ -59,6 +59,11 @@ module top_demo
   .digit_anodes(sseg_an)
   );
 
+  logic y;
+  logic [5:0] ledOut;
+
+  fsm state(smol_clk, btn[1], sw[1], sw[0], y, ledOut);
+
 // Register logic storing clock counts
   always@(posedge sysclk_125mhz)
   begin
