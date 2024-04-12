@@ -40,7 +40,7 @@ view wave
 # Diplays All Signals recursively
 # add wave -hex -r /stimulus/*
 add wave -noupdate -divider -height 32 "FSM"
-add wave -hex /stimulus/dut/y
+add wave -hex /stimulus/dut/currentState
 add wave -hex /stimulus/dut/reset
 add wave -hex /stimulus/dut/clk
 add wave -hex /stimulus/dut/l

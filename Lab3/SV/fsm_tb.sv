@@ -6,7 +6,7 @@ module stimulus ();
    logic  r;
    logic  reset;
    
-   logic [1:0] y;
+   logic [3:0] y;
    logic [5:0] led;
    
    integer handle3;
@@ -33,8 +33,8 @@ module stimulus ();
    always 
      begin
 	desc3 = handle3;
-	#5 $fdisplay(desc3, "%b %b %b || %b%b || %b%b%b|%b%b%b", 
-		     reset, l, r, y[1], y[0], led[5], led[4], led[3], led[2], led[1], led[0]);
+	#5 $fdisplay(desc3, "%b %b %b || %b%b%b%b || %b%b%b|%b%b%b", 
+		     reset, l, r, y[3], y[2], y[1], y[0], led[5], led[4], led[3], led[2], led[1], led[0]);
      end   
    
    initial 

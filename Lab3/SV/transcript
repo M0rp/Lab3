@@ -1,16 +1,16 @@
 # do fsm.do
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:10:15 on Mar 29,2024
+# Start time: 14:13:30 on Apr 12,2024
 # vlog clk_div.sv tb.sv 
 # -- Compiling module clk_div
 # -- Compiling module tb
 # 
 # Top level modules:
 # 	tb
-# End time: 13:10:15 on Mar 29,2024, Elapsed time: 0:00:00
+# End time: 14:13:30 on Apr 12,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:10:15 on Mar 29,2024
+# Start time: 14:13:30 on Apr 12,2024
 # vlog fsm.sv fsm_tb.sv 
 # -- Compiling module FSM
 # -- Compiling module blink
@@ -19,14 +19,13 @@
 # Top level modules:
 # 	blink
 # 	stimulus
-# End time: 13:10:15 on Mar 29,2024, Elapsed time: 0:00:00
+# End time: 14:13:30 on Apr 12,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -voptargs="+acc" work.stimulus 
-# Start time: 13:10:15 on Mar 29,2024
+# Start time: 14:13:30 on Apr 12,2024
 # Loading sv_std.std
 # Loading work.stimulus
 # Loading work.FSM
-# Loading work.clk_div
 # .list
 # configure wave not supported in batch mode
 # configure wave not supported in batch mode
@@ -36,5 +35,3 @@
 # configure wave not supported in batch mode
 # configure wave not supported in batch mode
 # configure wave not supported in batch mode
-# End time: 13:11:33 on Mar 29,2024, Elapsed time: 0:01:18
-# Errors: 0, Warnings: 0

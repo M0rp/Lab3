@@ -11,24 +11,24 @@ cModel Technology
 Z0 d/home/morptavius/Documents/GitHub/Lab3/Lab3/SV
 vblink
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1711735815
+Z2 !s110 1712949210
 !i10b 1
-!s100 bH?S^4]<=@A8DYRBBeTnm1
+!s100 H@[i4]YQh=ZeB:N`zMShd2
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
-IP?DH2f]G>jYT5ba0a>E<=2
+IG;@PKkCRDR^;Ia[jzjmgZ3
 Z4 VDg1SIo80bB@j0V0VzS_@n1
 S1
 R0
-Z5 w1711735698
+Z5 w1712948406
 Z6 8fsm.sv
 Z7 Ffsm.sv
 !i122 1
-L0 90 3
+L0 88 3
 Z8 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z9 !s108 1711735815.000000
+Z9 !s108 1712949210.000000
 !s107 fsm_tb.sv|fsm.sv|
 Z10 !s90 fsm.sv|fsm_tb.sv|
 !i113 1
@@ -43,7 +43,7 @@ I3m@3IYP11:LiM]`fnXkPo3
 R4
 S1
 R0
-Z12 w1711730148
+Z12 w1712336292
 8clk_div.sv
 Fclk_div.sv
 !i122 0
@@ -61,9 +61,9 @@ vFSM
 R1
 R2
 !i10b 1
-!s100 K^a`^6ddd53<`MoX50d942
+!s100 <F477n8O19Tmn1c7[b:z03
 R3
-ILFz?V6Uo5M@fWk0kXAR@k3
+IeaSeT2B><z]?RXHAAic<23
 R4
 S1
 R0
@@ -71,7 +71,7 @@ R5
 R6
 R7
 !i122 1
-L0 1 88
+L0 1 86
 R8
 r1
 !s85 0
@@ -86,13 +86,13 @@ vstimulus
 R1
 R2
 !i10b 1
-!s100 Bin1b948ZUU4YS2cU4E?10
+!s100 0V30MdC?N^[J3lJLX2Oe52
 R3
-IONEL7P8[;00VRGe:oRJ:S1
+IK5VhZoao75YeOmk4`E@[X3
 R4
 S1
 R0
-w1711735714
+w1712949205
 8fsm_tb.sv
 Ffsm_tb.sv
 !i122 1
