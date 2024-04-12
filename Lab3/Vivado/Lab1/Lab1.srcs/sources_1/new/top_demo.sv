@@ -43,31 +43,32 @@ module top_demo
   logic [16:0] CURRENT_COUNT;
   logic [16:0] NEXT_COUNT;
   logic        smol_clk;
+  logic clkSmol;
   
   // Place TicTacToe instantiation here
+  clk_div clkDiv(sysclk_125mhz, btn[0], clkSmol);
+  
+  logic [3:0] currentState;
+  logic [5:0] ledOut;
+
+  FSM state(clkSmol, btn[1], sw[1], sw[0], currentState, ledOut);
+
+  assign led[2:0] = ledOut[2:0];
+  assign led[7:5] = ledOut[5:3];
   
   // 7-segment display
   segment_driver driver(
   .clk(smol_clk),
   .rst(btn[3]),
-  .digit0(sw[3:0]),
-  .digit1(4'b0111),
-  .digit2(sw[7:4]),
-  .digit3(4'b1111),
+  .digit0(4'b0),
+  .digit1(4'b0),
+  .digit2(4'b0),
+  .digit3(currentState),
   .decimals({1'b0, btn[2:0]}),
   .segment_cathodes({sseg_dp, sseg_cg, sseg_cf, sseg_ce, sseg_cd, sseg_cc, sseg_cb, sseg_ca}),
   .digit_anodes(sseg_an)
   );
-
-  logic y;
-  logic [5:0] ledOut;
-
-  fsm state(smol_clk, btn[1], sw[1], sw[0], y, ledOut);
-
-  assign led[2:0] = ledOut[2:0];
-  assign led[7:5] = ledOut[5:3];
-
-// Register logic storing clock counts
+  
   always@(posedge sysclk_125mhz)
   begin
     if(btn[3])
